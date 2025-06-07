@@ -8,7 +8,7 @@ struct UnionFind {
 		rank=new int[n+1];
 		for(int i=1;i<=n;i++){
 			par[i]=i;
-			rank[i]=i;
+			rank[i]=1;
 		}
 	}
 	int find(int x){

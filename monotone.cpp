@@ -18,7 +18,7 @@ struct monotone_deque{
 vector<int> previousSmaller(vector<int>& arr){
 	int n=arr.size();
 	vector<int>pse(n,-1);
-	stack<int.st;
+	stack<int>st;
 	for(int i=0;i<n;i++){
 		while(!st.empty() && st.top()>=arr[i]){
 			st.pop();
@@ -34,7 +34,7 @@ vector<int> previousSmaller(vector<int>& arr){
 vector<int> nextSmaller(vector<int>& arr){
 	int n=arr.size();
 	vector<int>nse(n,-1);
-	stack<int.st;
+	stack<int>st;
 	for(int i=n-1;i>=0;i--){
 		while(!st.empty() && st.top()>=arr[i]){
 			st.pop();

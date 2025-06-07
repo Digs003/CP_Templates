@@ -31,7 +31,7 @@ struct manacher{
 		run_manacher(t+"#");
 	}
 
-	int getLongest(int cen,bool odd){
+	int getLongest(int cen,bool odd){//Longest palindrome at a particular center
 		int pos=2*cen+1+(!odd);
 		return p[pos]-1;
 	}

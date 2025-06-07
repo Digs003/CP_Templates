@@ -38,9 +38,15 @@ struct UnionFind {
 	int size(){
 		return set_sz;
 	}
-	void print(){
-		for(int i=1;i<=n;i++){
-			cout<<i<<"->"<<par[i]<<endl;
-		}
+	// void print(){
+	// 	for(int i=1;i<=n;i++){
+	// 		cout<<i<<"->"<<par[i]<<endl;
+	// 	}
+	// }
+
+	~UnionFind(){
+		delete[] par;
+		delete[] rank;
 	}
+
 };
